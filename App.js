@@ -1,12 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Header } from "react-native/Libraries/NewAppScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <View
+        style={{
+          backgroundColor: "#002D45",
+          height: "15%",
+          width: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text
+          style={{
+            fontFamily: "Rockwell",
+            fontSize: 35,
+          }}
+        >
+          {" "}
+          Co'Feature{" "}
+        </Text>
+      </View>
       <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="" />
     </View>
   );
 }
@@ -14,8 +34,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#F78965",
+    alignItems: "center",
   },
 });
