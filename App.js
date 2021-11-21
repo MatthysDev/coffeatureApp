@@ -19,6 +19,8 @@ export default function App() {
           style={{
             fontFamily: "Rockwell",
             fontSize: 35,
+            padding: 35,
+            margin: 30,
           }}
         >
           {" "}
