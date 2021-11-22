@@ -2,6 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Header } from "react-native/Libraries/NewAppScreen";
+import { Button } from "react-native";
+import { Image } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 export default function App() {
   return (
@@ -21,6 +24,7 @@ export default function App() {
             fontSize: 35,
             padding: 35,
             margin: 30,
+            color: "white",
           }}
         >
           {" "}
@@ -58,122 +62,348 @@ export default function App() {
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/cafe.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/milkycoffee.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/coffee.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
         <View
           style={{
             height: "25%",
             width: "100%",
-
             flexDirection: "row",
           }}
         >
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/astro.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/death.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/polar.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
         <View
           style={{
             height: "25%",
             width: "100%",
-
             flexDirection: "row",
           }}
         >
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/hibou.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/monkey.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
           <View
             style={{
               width: "30%",
-
               backgroundColor: "#EEEEEE",
               flex: 1,
               margin: "2%",
+              borderWidth: 3,
+              borderRadius: 20,
             }}
           >
-            <Text>Prod1</Text>
+            <TouchableOpacity
+              onPress={() => {
+                alert("you clicked me");
+              }}
+            >
+              <View
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Image
+                  source={require("./assets/shiba.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 120,
+                    height: 120,
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
+
       <View
         style={{
           backgroundColor: "#002D45",
@@ -189,6 +419,7 @@ export default function App() {
             fontSize: 35,
             padding: 35,
             margin: 30,
+            color: "white",
           }}
         >
           {" "}
