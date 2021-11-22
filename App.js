@@ -67,6 +67,15 @@ export default function App() {
               margin: "2%",
               borderWidth: 3,
               borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 0,
+                height: 5,
+              },
+              shadowOpacity: 0.36,
+              shadowRadius: 6.68,
+
+              elevation: 11,
             }}
           >
             <TouchableOpacity
@@ -103,6 +112,15 @@ export default function App() {
               margin: "2%",
               borderWidth: 3,
               borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: {
+                width: 0,
+                height: 5,
+              },
+              shadowOpacity: 0.36,
+              shadowRadius: 6.68,
+
+              elevation: 11,
             }}
           >
             <TouchableOpacity
@@ -131,16 +149,7 @@ export default function App() {
               </View>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -175,16 +184,7 @@ export default function App() {
             flexDirection: "row",
           }}
         >
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -212,16 +212,7 @@ export default function App() {
               </View>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -248,16 +239,7 @@ export default function App() {
               </View>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -292,16 +274,7 @@ export default function App() {
             flexDirection: "row",
           }}
         >
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -328,16 +301,7 @@ export default function App() {
               </View>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -365,16 +329,7 @@ export default function App() {
               </View>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              width: "30%",
-              backgroundColor: "#EEEEEE",
-              flex: 1,
-              margin: "2%",
-              borderWidth: 3,
-              borderRadius: 20,
-            }}
-          >
+          <View style={styles.productView}>
             <TouchableOpacity
               onPress={() => {
                 alert("you clicked me");
@@ -437,5 +392,22 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F78965",
     alignItems: "center",
+  },
+  productView: {
+    width: "30%",
+    backgroundColor: "#EEEEEE",
+    flex: 1,
+    margin: "2%",
+    borderWidth: 3,
+    borderRadius: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.36,
+    shadowRadius: 6.68,
+
+    elevation: 11,
   },
 });
