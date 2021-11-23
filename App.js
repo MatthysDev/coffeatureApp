@@ -23,7 +23,6 @@ function HomeScreen({ navigation }) {
       >
         <Text
           style={{
-            fontFamily: "Rockwell",
             fontSize: 35,
             padding: 25,
             margin: 0,
@@ -49,7 +48,6 @@ function HomeScreen({ navigation }) {
             alignItems: "center",
             justifyContent: "center",
             fontSize: 25,
-            fontFamily: "Futura",
             padding: 10,
           }}
         >
@@ -70,8 +68,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -86,8 +84,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -102,8 +100,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -126,8 +124,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
 
                     resizeMode: "cover",
                   }}
@@ -143,8 +141,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -159,8 +157,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -183,8 +181,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -199,8 +197,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
 
                     resizeMode: "cover",
                   }}
@@ -216,8 +214,8 @@ function HomeScreen({ navigation }) {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: 110,
-                    height: 110,
+                    width: "80%",
+                    height: "80%",
                     resizeMode: "cover",
                   }}
                 />
@@ -240,7 +238,6 @@ function HomeScreen({ navigation }) {
       >
         <Text
           style={{
-            fontFamily: "Rockwell",
             fontSize: 35,
             padding: 35,
             margin: 30,
@@ -271,7 +268,6 @@ function DetailsScreen() {
       >
         <Text
           style={{
-            fontFamily: "Rockwell",
             fontSize: 35,
             padding: 25,
             margin: 0,
@@ -297,7 +293,6 @@ function DetailsScreen() {
             alignItems: "center",
             justifyContent: "center",
             fontSize: 25,
-            fontFamily: "Futura",
             padding: 10,
           }}
         >
@@ -324,6 +319,29 @@ function DetailsScreen() {
           />
         </View>
       </View>
+      <View
+        style={{
+          backgroundColor: "#002D45",
+          height: "22%",
+          width: "90%",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: 20,
+          borderWidth: 3,
+        }}
+      >
+        <Text
+          style={{
+            fontSize: 35,
+            padding: 35,
+            margin: 30,
+            color: "white",
+          }}
+        >
+          {" "}
+          Bag{" "}
+        </Text>
+      </View>
     </View>
   );
 }
@@ -348,7 +366,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   productView: {
-    height: 110,
+    height: "95%",
     backgroundColor: "#FFFFFF",
     flex: 1,
     margin: "2%",
