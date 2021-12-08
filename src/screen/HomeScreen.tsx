@@ -1,13 +1,15 @@
 import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
+import { useState } from "react";
 import "react-native-gesture-handler";
 
 export const HomeScreen = () => {
   const navigation = useNavigation();
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       <View
@@ -61,7 +63,7 @@ export const HomeScreen = () => {
           }}
         >
           <View style={styles.productView}>
-            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
+            <TouchableOpacity onPress={() => setModalVisible(true)}>
               <View style={styles.buttonStyle}>
                 <Image
                   source={require("../../assets/img/cafe.png")}
@@ -77,6 +79,35 @@ export const HomeScreen = () => {
             </TouchableOpacity>
           </View>
           <View style={styles.productView}>
+            <Modal
+              style={{ alignItems: "center", justifyContent: "center" }}
+              animationType="slide"
+              transparent={true}
+              visible={modalVisible}
+              onRequestClose={() => {
+                setModalVisible(!modalVisible);
+              }}
+            >
+              <View>
+                <View style={styles.modal}>
+                  <Text>Hello World!</Text>
+                  <Pressable
+                    style={styles.modalButton}
+                    onPress={() => setModalVisible(!modalVisible)}
+                  >
+                    <Text
+                      style={{
+                        color: "white",
+                        fontSize: 18,
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Hide Modal
+                    </Text>
+                  </Pressable>
+                </View>
+              </View>
+            </Modal>
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
@@ -254,13 +285,31 @@ export const HomeScreen = () => {
 };
 
 const styles = StyleSheet.create({
+  modal: {
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    height: "70%",
+    width: "95%",
+    borderWidth: 5,
+    borderRadius: 30,
+    flex: 1,
+    flexDirection: "row",
+  },
+  modalButton: {
+    backgroundColor: "#002D45",
+    borderRadius: 20,
+    borderWidth: 3,
+    paddingHorizontal: 10,
+  },
   container: {
     flex: 1,
     backgroundColor: "#F78965",
     alignItems: "center",
   },
   productView: {
-    height: "95%",
+    height: "90%",
     backgroundColor: "#FFFFFF",
     flex: 1,
     margin: "2%",
