@@ -1,11 +1,10 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
-import { Product } from "./components/product";
+import { Product } from "../components/product";
 
-export default function App() {
+export const DetailProduit = () => {
   return (
     <View style={styles.container}>
       <View
@@ -26,8 +25,7 @@ export default function App() {
             color: "white",
           }}
         >
-          {" "}
-          Co'Feature{" "}
+          Co'Feature
         </Text>
       </View>
       <View
@@ -72,7 +70,7 @@ export default function App() {
             >
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/cafe.png")}
+                  source={require("../../assets/img/cafe.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -88,7 +86,7 @@ export default function App() {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

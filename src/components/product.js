@@ -1,9 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
 
-const Product = (imgUrl) => {
+export const Product = (imgUrl) => {
   return (
     <>
       <TouchableOpacity
@@ -13,7 +13,7 @@ const Product = (imgUrl) => {
       >
         <View>
           <Image
-            source={imgUrl}
+            source={require({ imgUrl })}
             style={{
               justifyContent: "center",
               alignItems: "center",
@@ -27,5 +27,3 @@ const Product = (imgUrl) => {
     </>
   );
 };
-
-export { Product };

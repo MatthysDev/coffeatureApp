@@ -1,15 +1,13 @@
+import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
-import { Product } from "./components/product";
-import { Linking } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import "react-native-gesture-handler";
 
-function HomeScreen({ navigation }) {
+export const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View
@@ -64,7 +62,7 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/cafe.png")}
+                  source={require("../../assets/img/cafe.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -80,7 +78,7 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/milkycoffee.png")}
+                  source={require("../../assets/img/milkycoffee.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -96,64 +94,7 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/coffee.png")}
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "80%",
-                    height: "80%",
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View
-          style={{
-            height: "25%",
-            width: "100%",
-            flexDirection: "row",
-          }}
-        >
-          <View style={styles.productView}>
-            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
-              <View style={styles.buttonStyle}>
-                <Image
-                  source={require("./assets/astro.png")}
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "80%",
-                    height: "80%",
-
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.productView}>
-            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
-              <View style={styles.buttonStyle}>
-                <Image
-                  source={require("./assets/death.png")}
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "80%",
-                    height: "80%",
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.productView}>
-            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
-              <View style={styles.buttonStyle}>
-                <Image
-                  source={require("./assets/polar.png")}
+                  source={require("../../assets/img/coffee.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -177,23 +118,7 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/hibou.png")}
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "80%",
-                    height: "80%",
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.productView}>
-            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
-              <View style={styles.buttonStyle}>
-                <Image
-                  source={require("./assets/monkey.png")}
+                  source={require("../../assets/img/astro.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -210,7 +135,80 @@ function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
               <View style={styles.buttonStyle}>
                 <Image
-                  source={require("./assets/shiba.png")}
+                  source={require("../../assets/img/death.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "80%",
+                    height: "80%",
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.productView}>
+            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
+              <View style={styles.buttonStyle}>
+                <Image
+                  source={require("../../assets/img/polar.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "80%",
+                    height: "80%",
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+        </View>
+        <View
+          style={{
+            height: "25%",
+            width: "100%",
+            flexDirection: "row",
+          }}
+        >
+          <View style={styles.productView}>
+            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
+              <View style={styles.buttonStyle}>
+                <Image
+                  source={require("../../assets/img/hibou.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "80%",
+                    height: "80%",
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.productView}>
+            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
+              <View style={styles.buttonStyle}>
+                <Image
+                  source={require("../../assets/img/monkey.png")}
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "80%",
+                    height: "80%",
+
+                    resizeMode: "cover",
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.productView}>
+            <TouchableOpacity onPress={() => navigation.navigate("Produit")}>
+              <View style={styles.buttonStyle}>
+                <Image
+                  source={require("../../assets/img/shiba.png")}
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -244,120 +242,14 @@ function HomeScreen({ navigation }) {
             color: "white",
           }}
         >
-          {" "}
-          Bag{" "}
+          Bag
         </Text>
       </View>
 
-      <StatusBar style="" />
+      <StatusBar />
     </View>
   );
-}
-
-function DetailsScreen() {
-  return (
-    <View style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "#002D45",
-          height: "10%",
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 35,
-            padding: 25,
-            margin: 0,
-            color: "white",
-          }}
-        >
-          {" "}
-          Co'Feature{" "}
-        </Text>
-      </View>
-      <View
-        style={{
-          backgroundColor: "#F78965",
-          height: "65%",
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text
-          style={{
-            height: "15%",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: 25,
-            padding: 10,
-          }}
-        >
-          Fiche produit
-        </Text>
-        <View
-          style={{
-            height: 350,
-            width: 350,
-            backgroundColor: "#FFFFFF",
-            borderRadius: 20,
-            borderWidth: 3,
-          }}
-        >
-          <Image
-            source={require("./assets/shiba.png")}
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-              width: 350,
-              height: 350,
-              resizeMode: "cover",
-            }}
-          />
-        </View>
-      </View>
-      <View
-        style={{
-          backgroundColor: "#002D45",
-          height: "22%",
-          width: "90%",
-          justifyContent: "center",
-          alignItems: "center",
-          borderRadius: 20,
-          borderWidth: 3,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 35,
-            padding: 35,
-            margin: 30,
-            color: "white",
-          }}
-        >
-          {" "}
-          Bag{" "}
-        </Text>
-      </View>
-    </View>
-  );
-}
-
-const Stack = createNativeStackNavigator();
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Co'Feature">
-        <Stack.Screen name="Co'Feature" component={HomeScreen} />
-        <Stack.Screen name="Produit" component={DetailsScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
