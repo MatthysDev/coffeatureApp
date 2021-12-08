@@ -23,24 +23,31 @@ export const DetailProduit = () => {
             padding: 35,
             margin: 30,
             color: "white",
+            fontWeight: "bold",
           }}
         >
           Co'Feature
         </Text>
       </View>
+
       <View
         style={{
           backgroundColor: "#F78965",
-          height: "65%",
+          height: "85%",
           width: "100%",
-          justifyContent: "center",
+
           alignItems: "center",
         }}
       >
+        <View style={{ margin: 25 }}>
+          <Text style={{ fontSize: 24, fontWeight: "bold" }}>
+            Nom du produit
+          </Text>
+        </View>
         <View
           style={{
-            height: "25%",
-            width: "100%",
+            height: "50%",
+            width: "90%",
             flexDirection: "row",
           }}
         >
@@ -63,24 +70,18 @@ export const DetailProduit = () => {
               elevation: 11,
             }}
           >
-            <TouchableOpacity
-              onPress={() => {
-                alert("you clicked me");
-              }}
-            >
-              <View style={styles.buttonStyle}>
-                <Image
-                  source={require("../../assets/img/cafe.png")}
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: 120,
-                    height: 120,
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-            </TouchableOpacity>
+            <View style={styles.buttonStyle}>
+              <Image
+                source={require("../../assets/img/shiba.png")}
+                style={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "90%",
+                  height: "90%",
+                  resizeMode: "cover",
+                }}
+              />
+            </View>
           </View>
         </View>
       </View>

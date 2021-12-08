@@ -21,10 +21,12 @@ export const HomeScreen = () => {
       >
         <Text
           style={{
+            fontFamily: "Rockwell",
             fontSize: 35,
-            padding: 25,
-            margin: 0,
+            padding: 35,
+            margin: 30,
             color: "white",
+            fontWeight: "bold",
           }}
         >
           {" "}
@@ -34,7 +36,7 @@ export const HomeScreen = () => {
       <View
         style={{
           backgroundColor: "#F78965",
-          height: "65%",
+          height: "60%",
           width: "100%",
           justifyContent: "center",
           alignItems: "center",
@@ -66,8 +68,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -82,8 +84,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -98,8 +100,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -122,8 +124,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
 
                     resizeMode: "cover",
                   }}
@@ -139,8 +141,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -155,8 +157,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -179,8 +181,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
@@ -195,8 +197,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
 
                     resizeMode: "cover",
                   }}
@@ -212,8 +214,8 @@ export const HomeScreen = () => {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "80%",
-                    height: "80%",
+                    width: "95%",
+                    height: "95%",
                     resizeMode: "cover",
                   }}
                 />
