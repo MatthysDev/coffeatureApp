@@ -1,5 +1,11 @@
 # coffeatureApp
 
+## To see the project :
+https://expo.dev/@reactmatthys/coffeatureApp
+
+## To start the project :
+```expo start ```
+
 ReactNative project made to learn.
 i follow my figma work to do the project 
 the final result could be this 
