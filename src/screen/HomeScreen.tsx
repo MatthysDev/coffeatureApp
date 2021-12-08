@@ -17,13 +17,13 @@ export const HomeScreen = () => {
           backgroundColor: "#002D45",
           height: "15%",
           width: "100%",
-          justifyContent: "center",
           alignItems: "center",
+          marginTop: 0,
+          paddingTop: 0,
         }}
       >
         <Text
           style={{
-            fontFamily: "Rockwell",
             fontSize: 35,
             padding: 35,
             margin: 30,
@@ -255,28 +255,37 @@ export const HomeScreen = () => {
           </View>
         </View>
       </View>
-
       <View
         style={{
-          backgroundColor: "#002D45",
-          height: "22%",
-          width: "95%",
-          justifyContent: "center",
+          height: "25%",
+          width: "100%",
+          flex: 1,
+
           alignItems: "center",
-          borderRadius: 20,
-          borderWidth: 3,
         }}
       >
-        <Text
+        <View
           style={{
-            fontSize: 35,
-            padding: 35,
-            margin: 30,
-            color: "white",
+            backgroundColor: "#002D45",
+            height: "90%",
+            width: "90%",
+            justifyContent: "center",
+            alignItems: "center",
+            borderRadius: 20,
+            borderWidth: 3,
           }}
         >
-          Bag
-        </Text>
+          <Text
+            style={{
+              fontSize: 35,
+              padding: 35,
+              margin: 30,
+              color: "white",
+            }}
+          >
+            Bag
+          </Text>
+        </View>
       </View>
 
       <StatusBar />
@@ -294,8 +303,6 @@ const styles = StyleSheet.create({
     width: "95%",
     borderWidth: 5,
     borderRadius: 30,
-    flex: 1,
-    flexDirection: "row",
   },
   modalButton: {
     backgroundColor: "#002D45",
