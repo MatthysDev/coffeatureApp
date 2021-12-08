@@ -4,7 +4,7 @@ interface ProductProps {
   imageSource: NodeRequire;
 }
 
-const products: ProductProps[] = [
+export const products: ProductProps[] = [
   {
     title: "Product 1",
     id: "1",

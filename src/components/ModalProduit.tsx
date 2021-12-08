@@ -3,11 +3,16 @@ import { Text, Pressable, View } from "react-native";
 import { useModal } from "../hooks/useModal";
 import { StyleSheet } from "react-native";
 import { Modal } from "react-native";
+import { products } from "../api/products";
 
 export const ModalProduit = (props: Props) => {
   const { modalVisible, toggleModal } = useModal();
 
-  return (
+  const Modal = ({ item }: any) => (
+    <ModalCard title={item.title} id={item.id} imageSource={item.imageSource} />
+  );
+
+  const ModalCard = ({ title, id, imageSource }: ProductProps) => (
     <Modal
       style={{ alignItems: "center", justifyContent: "center" }}
       animationType="slide"
@@ -16,7 +21,17 @@ export const ModalProduit = (props: Props) => {
       onRequestClose={toggleModal}
     >
       <View style={styles.modal}>
-        <Text>Hello World!</Text>
+        <Text>{title}</Text>
+        <Image
+          source={imageSource}
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            width: "95%",
+            height: "95%",
+            resizeMode: "cover",
+          }}
+        />
         <Pressable style={styles.modalButton} onPress={() => toggleModal()}>
           <Text
             style={{

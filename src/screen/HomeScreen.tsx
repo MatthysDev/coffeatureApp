@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
 import "react-native-gesture-handler";
@@ -12,7 +12,30 @@ export const HomeScreen = () => {
   const { modalVisible, toggleModal } = useModal();
   return (
     <>
-      <ModalProduit modalVisible={modalVisible} toggleModal={toggleModal} />
+      {/* <ModalProduit modalVisible={modalVisible} toggleModal={toggleModal} /> */}
+      <Modal
+        style={{ alignItems: "center", justifyContent: "center" }}
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={toggleModal}
+      >
+        <View style={styles.modal}>
+          <Text>Nom produit</Text>
+
+          <Pressable style={styles.modalButton} onPress={() => toggleModal()}>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 18,
+                fontWeight: "bold",
+              }}
+            >
+              Hide Modal
+            </Text>
+          </Pressable>
+        </View>
+      </Modal>
       <View style={styles.container}>
         <View
           style={{
