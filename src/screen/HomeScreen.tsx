@@ -13,7 +13,7 @@ export const HomeScreen = () => {
       <View
         style={{
           backgroundColor: "#002D45",
-          height: "10%",
+          height: "15%",
           width: "100%",
           justifyContent: "center",
           alignItems: "center",
