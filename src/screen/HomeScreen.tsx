@@ -1,18 +1,18 @@
 import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { Image } from "react-native";
 import { TouchableOpacity } from "react-native";
-import { useState } from "react";
 import "react-native-gesture-handler";
 import { useModal } from "../hooks/useModal";
-import { Modal } from "react-native";
+import { ModalProduit } from "../components/ModalProduit";
 export const HomeScreen = () => {
   const navigation = useNavigation();
   const { modalVisible, toggleModal } = useModal();
   return (
     <>
+      <ModalProduit modalVisible={modalVisible} toggleModal={toggleModal} />
       <View style={styles.container}>
         <View
           style={{
@@ -263,28 +263,6 @@ export const HomeScreen = () => {
 
         <StatusBar />
       </View>
-      <Modal
-        style={{ alignItems: "center", justifyContent: "center" }}
-        animationType="slide"
-        transparent={true}
-        visible={modalVisible}
-        onRequestClose={toggleModal}
-      >
-        <View style={styles.modal}>
-          <Text>Hello World!</Text>
-          <Pressable style={styles.modalButton} onPress={() => toggleModal()}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 18,
-                fontWeight: "bold",
-              }}
-            >
-              Hide Modal
-            </Text>
-          </Pressable>
-        </View>
-      </Modal>
     </>
   );
 };

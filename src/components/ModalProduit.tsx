@@ -2,8 +2,9 @@ import React from "react";
 import { Text, Pressable, View } from "react-native";
 import { useModal } from "../hooks/useModal";
 import { StyleSheet } from "react-native";
+import { Modal } from "react-native";
 
-export const Modal = (props: Props) => {
+export const ModalProduit = (props: Props) => {
   const { modalVisible, toggleModal } = useModal();
 
   return (
@@ -16,7 +17,7 @@ export const Modal = (props: Props) => {
     >
       <View style={styles.modal}>
         <Text>Hello World!</Text>
-        <Pressable style={styles.modalButton} onPress={toggleModal}>
+        <Pressable style={styles.modalButton} onPress={() => toggleModal()}>
           <Text
             style={{
               color: "white",
